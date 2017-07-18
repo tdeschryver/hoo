@@ -1,3 +1,5 @@
+const chalk = require('chalk')
+
 const listPrint = user =>
   Object.keys(user).reduce(
     (printout, key) => (printout += `${key}: ${user[key]}\n`),
@@ -5,22 +7,22 @@ const listPrint = user =>
   )
 
 const prettyPrint = user => `
-Info:
+${chalk.underline.bold('Info')}:
   name: ${user.name}
   location: ${user.location}
   company: ${user.company}
   bio: ${user.bio}
 
-Activity:
+${chalk.underline.bold('Activity:')}
   last starred: ${user.lastStarred.join(', ')}
 
-Numbers:
+${chalk.underline.bold('Numbers:')}
   repositories: ${user.repos}
   followers: ${user.followers}
   following: ${user.following}
   gists: ${user.gists}
   
-Links:
+${chalk.underline.bold('Links:')}
   profile: ${user.profileUrl}
   gists: ${user.gistsUrl}
 `

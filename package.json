@@ -19,6 +19,7 @@
     "url": "https://github.com/tdeschryver/hoo/issues"
   },
   "dependencies": {
+    "chalk": "^2.0.1",
     "node-fetch": "^1.7.1"
   }
 }
