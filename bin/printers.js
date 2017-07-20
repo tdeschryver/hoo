@@ -1,12 +1,12 @@
 const chalk = require('chalk')
 
-const listPrint = user =>
+const list = user =>
   Object.keys(user).reduce(
     (printout, key) => (printout += `${key}: ${user[key]}\n`),
     ''
   )
 
-const prettyPrint = user => `
+const pretty = user => `
 ${chalk.underline.bold('Info')}:
   name: ${user.name}
   location: ${user.location}
@@ -28,6 +28,6 @@ ${chalk.underline.bold('Links:')}
 `
 
 module.exports = {
-  listPrint,
-  prettyPrint,
+  list,
+  pretty,
 }
