@@ -10,6 +10,9 @@
   "bin": {
     "hoo": "./bin/hoo.js"
   },
+  "scripts": {
+    "format": "prettier-eslint \"**/*.js\" --write"
+  },
   "author": "tdeschryver",
   "repository": {
     "type": "git",
@@ -22,5 +25,13 @@
     "chalk": "^2.0.1",
     "node-fetch": "^1.7.1",
     "yargs": "^8.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-plugin-prettier": "^2.1.2",
+    "prettier": "^1.5.3",
+    "prettier-eslint": "^6.4.2",
+    "prettier-eslint-cli": "^4.1.1"
   }
 }

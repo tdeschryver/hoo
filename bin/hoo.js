@@ -5,7 +5,7 @@ const printers = require('./printers')
 const chalk = require('chalk')
 var argv = require('yargs')
   .usage('Usage: $0 username [options]')
-  .example('$0 tdeschryver', 'Print out the GitHub\'s info of tdeschryver')
+  .example('$0 tdeschryver', "Print out the GitHub's info of tdeschryver")
   .options({
     p: {
       alias: 'printer',
@@ -17,8 +17,7 @@ var argv = require('yargs')
   .version()
   .alias('v', 'version')
   .help('h')
-  .alias('h', 'help')
-  .argv
+  .alias('h', 'help').argv
 
 const logCreator = out => printer => message => out(printer(message))
 const logger = logCreator(process.stdout.write.bind(process.stdout))

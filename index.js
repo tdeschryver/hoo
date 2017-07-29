@@ -26,7 +26,7 @@ const userInfo = async username => {
 
 const starredInfo = async username => {
   const response = await fetch(
-    `https://api.github.com/users/${username}/starred`,
+    `https://api.github.com/users/${username}/starred`
   )
   const json = await response.json()
   return {
