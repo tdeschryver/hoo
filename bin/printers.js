@@ -1,3 +1,4 @@
+'use strict'
 const chalk = require('chalk')
 
 const list = user =>
@@ -21,7 +22,7 @@ ${chalk.underline.bold('Numbers:')}
   followers: ${user.followers}
   following: ${user.following}
   gists: ${user.gists}
-  
+
 ${chalk.underline.bold('Links:')}
   profile: ${user.profileUrl}
   gists: ${user.gistsUrl}

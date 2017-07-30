@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 
+'use strict'
 const { hoo } = require('../index')
 const printers = require('./printers')
 const chalk = require('chalk')
-var argv = require('yargs')
+const argv = require('yargs')
   .usage('Usage: $0 username [options]')
   .example('$0 tdeschryver', "Print out the GitHub's info of tdeschryver")
   .options({
