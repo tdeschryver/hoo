@@ -4,7 +4,7 @@ const chalk = require('chalk')
 const list = user =>
   Object.keys(user).reduce(
     (printout, key) => (printout += `${key}: ${user[key]}\n`),
-    ''
+    '',
   )
 
 const pretty = user => `

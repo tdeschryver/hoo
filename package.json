@@ -11,7 +11,8 @@
     "hoo": "./bin/hoo.js"
   },
   "scripts": {
-    "format": "prettier-eslint \"**/*.js\" --write  && eslint ."
+    "lint": "eslint .",
+    "format": "eslint --fix ."
   },
   "author": "tdeschryver",
   "repository": {
